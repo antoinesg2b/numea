@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+    body {
+      margin: 50px auto;
+      max-width: 800px;
+      font-family: Arial, sans-serif;
+      text-align: justify;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Optimisation des budgets marketing : Maximisez vos résultats et évitez les regrets</h1>
+  <div class="container">
+
+      <h3 class="text-muted">Dans la vie comme en affaires, évitons les regrets</p>
+
+  </div>
+  
+  <p>De nos jours, les entreprises ont plus de données à leur disposition que jamais pour les aider à prendre des décisions éclairées. Cependant, l'utilisation de ces informations pour prendre des décisions judicieuses peut représenter un défi. Parmi les outils employés, le modèle de médias mixtes (MMM) permet d'identifier les canaux ayant le plus d'impact sur les ventes.<p>
+
+    <h2>Illustrons avec un exemple!</h2>
+  <p>L'entreprise X cherche à déterminer la répartition optimale de son budget de 1 000 000 $ entre la télévision, la radio et les publicités en ligne. Les analystes ont utilisé des modèles prédictifs pour estimer le retour sur investissement (ROI) de chaque canal et ont obtenu des résultats intéressants. Les graphiques ci-dessous illustrent la relation entre les investissements et les ROI : 
+initialement, plus l'investissement dans un média est important, plus le ROI augmente. Cependant, au-delà d'un certain point de saturation, le ROI stagne voire diminue.</p>
+  <div style="display: flex; justify-content: center;">
+    <iframe width="800" height="600" frameborder="0" scrolling="no" src="https://plotly.com/~antoineNumea/1.embed"></iframe>
+  </div>
+ <p>Les graphiques illustrent clairement les performances supérieures des médias en ligne, suivis de la radio, puis de la télévision.</p>
+<h2>Optimisation</h2>
+<p>Si l'on admet que les modèles prédictifs fournissent une représentation fiable de l'avenir, il est possible d'utiliser ces modèles pour déterminer la répartition optimale du budget entre les trois canaux. Cette approche permet de formuler le problème en termes de problème d'optimisation sous contrainte, dont l'objectif est de maximiser le ROI tout en respectant les contraintes budgétaires.</p>
+<p>Différentes techniques peuvent être utilisées pour résoudre ce problème, comme la descente de gradient. En utilisant cette méthode, il est possible d'obtenir une solution optimale. Dans le cas présent :</p>
+
+  <ul>
+    <li>Radio : 330 000 $</li>
+    <li>Télévision : 0 $</li>
+    <li>Online : 670 000 $</li>
+  </ul>
+<p>Cette allocation des fonds corrobore l'observation précédente, avec une part plus importante allouée aux médias en ligne, suivis de la radio et enfin de la télévision. Avec cette répartition optimale, un ROI de 135% est possible. Cependant, il peut sembler contre-intuitif et risqué de couper totalement le budget de la télévision...</p>
+
+<h2>Regret : Prendre des décisions éclairées</h2>
+<p>En théorie de la décision, le regret est défini comme la différence entre le résultat obtenu suite à une décision prise et le meilleur résultat possible qui aurait pu être obtenu si une autre décision avait été prise. Dans le contexte de l'optimisation des budgets marketing, le regret peut survenir lorsque les résultats réels divergent des prédictions du modèle utilisé.</p>
+<p>Supposons que l'entreprise X décide de suivre strictement les résultats de l'optimisation précédente et de supprimer entièrement le budget de la télévision. Au trimestre suivant, après avoir rassemblé les résultats et mis à jour les modèles prédictifs, on s'aperçoit toutefois que la télévision a eu une meilleure performance qu'au trimestre précédent et que les modèles n'étaient pas entièrement exacts. Le ROI estimé avec cette allocation budgétaire est de 115%.</p>
+<p>Après avoir effectué une nouvelle optimisation sur les nouveaux modèles, on constate également que l'allocation budgétaire suivante aurait généré un meilleur retour sur investissement de 137% :</p>
+<ul>
+  <li>Radio : 230 000 $</li>
+  <li>Télévision : 170 000 $</li>
+  <li>Online : 600 000 $</li>
+</ul>
+<p>Le regret dans ce cas serait donc de : 137% - 115% = 22%.</p>
+
+
+
+<h2>Minimisation du regret : Prenez des décisions agiles et informées</h2>
+<p>Plutôt que de se restreindre à une simple optimisation basée sur des modèles déterministes, il est essentiel de minimiser le regret en considérant divers scénarios possibles. Cette approche vous permet de prendre des décisions agiles et informées en prévoyant les variations de performance des différents médias et les incertitudes du marché.</p>
+<p>Par exemple, imaginons un scénario où la performance de la télévision dépasse les prévisions au prochain trimestre, tandis que celle de la radio subit une légère baisse et que les médias en ligne conservent leur performance. En recourant à des techniques telles que celle de Monte-Carlo, vous pouvez simuler ces variations et bien d'autres. Cela vous permet d'arriver à une solution qui minimise le regret potentiel dans l'ensemble de ces situations, conduisant généralement à une répartition du budget plus équilibrée, par exemple :</p>
+<ul>
+  <li>Radio : 350 000 $</li>
+  <li>Télévision : 150 000 $</li>
+  <li>Online : 500 000 $</li>
+</ul>
+<p>Cette répartition pourrait ne pas être aussi efficace si le modèle déterministe se révèle exact (ROI : 130%). Cependant, une telle approche permettrait de minimiser les risques et d'optimiser le retour sur investissement dans le contexte d'incertitude (ROI : 128% dans l'exemple précédemment mentionné où la télévision surperforme par rapport aux prévisions).</p>
+<p>Cette approche vous permet de profiter des insights de votre modèle prédictif tout en vous protégeant contre les risques potentiels et les incertitudes du marché.</p>
+
+<p>Vivez sans regret!</p>
+
+
+  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
