@@ -30,7 +30,7 @@
   
   <p>De nos jours, les entreprises ont plus de données à leur disposition que jamais pour les aider à prendre des décisions éclairées. Cependant, l'utilisation de ces informations pour prendre des décisions judicieuses peut représenter un défi. Parmi les outils employés, le modèle de médias mixtes (MMM) permet d'identifier les canaux ayant le plus d'impact sur les ventes.<p>
 
-    <h2>Illustrons avec un exemple! <sup><a href="#example1">1</a></sup></h2>
+    <h2>Illustrons avec un exemple!</h2>
   <p>L'entreprise X cherche à déterminer la répartition optimale de son budget de 1M $ entre la télévision, la radio et les publicités en ligne. Les analystes ont utilisé des modèles prédictifs pour estimer le retour sur investissement (ROI) de chaque canal et ont obtenu des résultats intéressants. Les graphiques ci-dessous illustrent la relation entre les investissements et les ROI: 
 initialement, plus l'investissement dans un média est important, plus le ROI augmente. Cependant, au-delà d'un certain point de saturation, le ROI stagne voire diminue.</p>
   <div style="display: flex; justify-content: center;">
@@ -40,7 +40,7 @@ initialement, plus l'investissement dans un média est important, plus le ROI au
 <h2>Optimisation</h2>
 <p>Si l'on admet que les modèles prédictifs fournissent une représentation fiable de l'avenir, il est également possible d'utiliser ces modèles pour déterminer la répartition optimale du budget entre les trois canaux. Cette stratégie permet de traiter la question comme un problème d'optimisation soumis à des contraintes. Ainsi, l'objectif est de maximiser le retour sur investissement tout en respectant les contraintes budgétaires.</p>
 <p>Différentes techniques peuvent être utilisées pour résoudre ce problème, comme la descente de gradient. En utilisant cette méthode, il est possible d'obtenir une solution optimale. Dans le cas présent :</p>
-<h3 id="example1"> Répartition optimale</h3> <sup><a href="#example1">1</a></sup>
+<h3 id="example1"> Répartition optimale <sup><a href="#example1">1</a></sup> </h3>
   <ul>
     <li>Radio : 420 000 $</li>
     <li>Télévision : 0 $</li>
@@ -52,7 +52,7 @@ initialement, plus l'investissement dans un média est important, plus le ROI au
 <p>En théorie de la décision, le regret est défini comme la différence entre le résultat obtenu suite à une décision prise et le meilleur résultat possible qui aurait pu être obtenu si une autre décision avait été prise. Dans le contexte de l'optimisation des budgets marketing, le regret peut survenir lorsque les résultats réels divergent des prédictions du modèle utilisé.</p>
 <p>Supposons que l'entreprise X décide de suivre strictement les résultats de l'optimisation précédente et de supprimer entièrement le budget de la télévision. Au trimestre suivant, après avoir rassemblé les résultats et mis à jour les modèles prédictifs, on s'aperçoit que la télévision a eu une meilleure performance qu'au trimestre précédent et que les modèles n'étaient pas entièrement exacts. Le ROI observé avec cette allocation budgétaire est de 130%.</p>
 <p>Après avoir effectué une optimisation à partir des nouveaux modèles, on constate également que l'allocation budgétaire suivante aurait généré un meilleur retour sur investissement, soit un ROI de 170% :</p>
-<h3 id="example2"> Répartition optimale</h3> <sup><a href="#example2">2</a></sup>
+<h3 id="example2"> Répartition optimale <sup><a href="#example2">2</a></sup> </h3> 
 <ul>
   <li>Radio : 230 000 $</li>
   <li>Télévision : 170 000 $</li>
@@ -70,7 +70,7 @@ initialement, plus l'investissement dans un média est important, plus le ROI au
   <li>Télévision : 150 000 $</li>
   <li>Online : 550 000 $</li>
 </ul>
-<p>Cette répartition pourrait ne pas être aussi efficace si le modèle déterministe se révèle exact (<a href="#example1"> Le premier cas de figure </a>, ROI : 170%). Cependant, une telle approche permettrait de minimiser les risques et d'optimiser le retour sur investissement dans le contexte d'incertitude (<a href="#example2"> Le deuxième cas de figure </a>, ROI : 155%).</p>
+<p>Cette répartition pourrait ne pas être aussi efficace si le modèle déterministe se révèle exact. On obtiendrait un ROI de 170% et un regret de 20% (190% - 170%) pour le premier cas de figure<sup><a href="#example1">1</a></sup>. Cependant, une telle approche permettrait de minimiser les risques et d'optimiser le retour sur investissement dans le contexte d'incertitude. On obtiendrait un ROI de 170% et un regret de 20% (190% - 170%) pour le premier cas de figure<sup><a href="#example2">2</a></sup> </p>
 <p>Cette approche vous permet de profiter des insights de votre modèle prédictif tout en vous protégeant contre les risques potentiels et les incertitudes du marché.</p>
 
 <h4 class="font-italic">Si vous aussi vous aimeriez vivre sans regret, contactez nos experts, ils sauront vous aider à créer votre propre modèle de médias mixtes ! </h4>
